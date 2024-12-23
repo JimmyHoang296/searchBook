@@ -183,7 +183,7 @@ function searchBook(){
     }
 
     if (values.age!=='0'){
-        const ageColumn = headerIndex("age")
+        const ageColumn = headerIndex("age target")
         const ageValue = ages[values.age-1]
         console.log(ageValue)
         foundBooks = foundBooks.filter(book=> book[ageColumn].toLowerCase().includes(ageValue.toLowerCase()))
@@ -195,7 +195,7 @@ function searchBook(){
     }
     if (values.genre!=='0'){
         const genreColumn = headerIndex("genre")
-        const genreValue = languages[values.language-1]
+        const genreValue = genres[values.genre-1]
         foundBooks = foundBooks.filter(book=> book[genreColumn].toLowerCase().includes(genreValue.toLowerCase()))
     }
     
