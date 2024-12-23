@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search book</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+          <div class="form">
+            <h1 class="title">School name library search book</h1>
+            <p class="description">Find the book you love. If you can not remember full information, just search by keyword you have</p>
+          <div class="input-container">
+            <label for="">Title</label>
+            <input type="text" placeholder="Title of the book" id="title" value="a"/>
+          </div>
+          <div class="input-container">
+            <label for="">Author</label>
+            <input type="text" placeholder="Author of the book" id="author"/>
+          </div>
+          <div class="input-container">
+            <label for="">Publisher</label>
+            <input type="text" placeholder="Publisher of the book" id="publisher"/>
+          </div>
+          <div class="input-container">
+            <label for="">Age</label>
+            <!-- <div class="selected-age"></div>
+            <div class="list-age">
+              <span>baby</span>
+              <span>adult</span>
+            </div> -->
+            <select name="age"  id="age">
+                <option value=0>All age</option>
+                <option value=1>Teens to Adults (12+)</option>
+                <option value=2>Children (8-12)</option>
+            </select>
+          </div>
+          <div class="input-container">
+            <label for="">Language</label>
+            <!-- <div class="selected-language"></div>
+            <div class="list-language">
+              <span>english</span>
+              <span>french</span>
+            </div> -->
+            <select name="language" id="language">
+                <option value=0>All language</option>
+                <option value=1>English</option>
+                <option value=2>French</option>
+            </select>
+          </div>
+          <div class="input-container">
+            <label for="">Genre</label>
+            <!-- <div class="selected-genre"></div>
+            <div class="list-genre">
+              <span>fiction</span>
+              <span>literature</span>
+              <span>mystery</span>
+              <span>adventure</span>
+            </div> -->
+            <select name="genre" id="genre">
+                <option value=0>Any</option>
+                <option value=1>fiction</option>
+              <option value=2>literature</option>
+              <option value=3>mystery</option>
+              <option value=4>adventure</option>
+            </select>
+          </div>
+          <button onclick="searchBook()">Search book</button>
+        </div>
+        <div class="search-result">
+            <img class="tempImg" src="https://media.istockphoto.com/id/1090896622/vector/reading-is-always-a-good-idea.jpg?s=612x612&w=0&k=20&c=2sgH8VoJKVCU3WBVy1je76u8CmMKZoRagKbSNbTByh4=" alt="">
+        </div>
+
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+
+</html>
