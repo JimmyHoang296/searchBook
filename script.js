@@ -160,9 +160,10 @@ function searchBook(){
         return headers.findIndex(header => header.toLowerCase() ===title)
     }
     console.log(values)
-    const isValue = Object.values(values).every(val => val!==''&&val!=='0')
+    const isValue = Object.values(values).every(value => value === "" || value === "0");
     console.log (isValue)
-    if (!isValue){
+
+    if (isValue){
         alert('At least input title or author to search')
         document.getElementById('title').focus()
         return
